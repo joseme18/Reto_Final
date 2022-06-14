@@ -19,6 +19,9 @@
             margin:0;
             font-family:'Quicksand', sans-serif;
         }
+        header{
+            width: 100%;
+        }
         h1{
             margin: 0;
             margin-right: 100px;
@@ -40,6 +43,7 @@
             padding: 100px;
             align-items: center;
             flex-direction: column;
+            margin: 0;
         }
         label{
         font-size: medium; 
@@ -50,7 +54,7 @@
         }
         .botones{
             display: grid;
-            place-content: center;
+            place-content:initial;
             grid-template-rows:  auto;
             grid-template-columns: auto auto;
             padding: 16px;
@@ -158,6 +162,7 @@
         @media(max-width:600px){
             section{
                 padding: 16px;
+                margin: 0;
             }
             .botones{
                 display: flex;
@@ -201,9 +206,7 @@
     </div>
 </header>
     <section>
-        <h2 class="title">Calcule el retorno de su inversion comparando el interés simple y el interés compuesto</h2>
-        <form>
-            
+        <h2 class="title">Calcule el retorno de su inversion comparando el interés simple y el interés compuesto</h2>     
             <div class="botones">
                     <label for="inputk">
                         Indique cuanto capital desea invertir:
@@ -228,8 +231,7 @@
                 </button>
             </div>
             <p class="parrafo" id="resultado"></p>
-        </form>
-    </section>
+         </section>
     <script src="7CalculoInteresCompuesto.js"></script>
 </body>
 </html>

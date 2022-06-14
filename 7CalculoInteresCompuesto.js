@@ -26,7 +26,7 @@ function calcularInteresSimple(){
     var i = iu.value;
     // imprimir resultado 
     var resultado = document.getElementById("resultado");
-    var is = parseInt((k*(calcularInteres(i))*n));
+    var is = parseInt(k) + (parseInt((k*(calcularInteres(i))*n)));
     return resultado.innerHTML = "El retorno de su inversión sera: " + is + " basado en un Interés Simple";
 };
 
